@@ -1,0 +1,22 @@
+{
+  "id": "research",
+  "name": "Research & Experimentation",
+  "description": "Configured for academic and industrial research emphasizing reproducibility, metric honesty, experiment logging, and provenance.",
+  "file_globs": "*.{py,r,jl,md,tex}",
+  "commands": {
+    "test": "pytest",
+    "reproduce": "python -m run_experiment",
+    "lint": "ruff check ."
+  },
+  "conventions": [
+    "Prioritize scientific reproducibility: record git commit SHA, environment packages, and random seeds for all experiment runs.",
+    "Report baseline comparisons honestly; avoid cherry-picking favorable metrics.",
+    "Separate raw datasets, processed feature sets, and experimental results cleanly."
+  ],
+  "recommended_skills": [
+    "research",
+    "requirements",
+    "doc_maintenance",
+    "code_review"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mobile",
+  "name": "Mobile Applications",
+  "description": "Configured for cross-platform and native mobile software (React Native, Flutter, Swift, Kotlin) with device permission boundaries.",
+  "file_globs": "*.{dart,swift,kt,tsx,jsx}",
+  "commands": {
+    "test": "npm test || flutter test",
+    "lint": "npm run lint || flutter analyze",
+    "build": "npm run build"
+  },
+  "conventions": [
+    "Design for variable screen dimensions and touch interactions.",
+    "Handle transient network connectivity and battery constraints safely.",
+    "Isolate native platform bridges behind clean abstractions."
+  ],
+  "recommended_skills": [
+    "incremental_impl",
+    "debugging",
+    "security_review",
+    "test_planning"
+  ]
+}

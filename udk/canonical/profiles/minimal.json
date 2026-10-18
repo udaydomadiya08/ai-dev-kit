@@ -1,0 +1,18 @@
+{
+  "id": "minimal",
+  "name": "Minimal & Universal",
+  "description": "Lightweight universal profile containing core engineering principles, safety boundaries, and essential skills suitable for any repository.",
+  "file_globs": "*",
+  "commands": {
+    "test": "make test || pytest || npm test"
+  },
+  "conventions": [
+    "Read before write: inspect existing files and conventions before editing.",
+    "Make minimal coherent edits; verify changes with automated tests."
+  ],
+  "recommended_skills": [
+    "debugging",
+    "test_planning",
+    "code_review"
+  ]
+}

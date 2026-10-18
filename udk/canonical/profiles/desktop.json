@@ -1,0 +1,22 @@
+{
+  "id": "desktop",
+  "name": "Desktop Applications",
+  "description": "Configured for native and cross-platform desktop applications (Tauri, Electron, PyQt, native GUIs) without assuming cloud backends.",
+  "file_globs": "*.{py,rs,cpp,ts,tsx}",
+  "commands": {
+    "test": "npm test || pytest || cargo test",
+    "build": "npm run build || cargo build",
+    "dev": "npm run dev || cargo run"
+  },
+  "conventions": [
+    "Handle offline states gracefully; never assume an active internet connection.",
+    "Centralize local file storage and caches in standard OS app data directories.",
+    "Ensure UI responsiveness by offloading long computations to worker threads."
+  ],
+  "recommended_skills": [
+    "debugging",
+    "architecture_review",
+    "security_review",
+    "test_planning"
+  ]
+}

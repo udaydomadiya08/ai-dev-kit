@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-ai-dev-kit"
+version = "0.1.0"
+description = "Universal open-source engineering foundation for AI-assisted software development"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Universal AI Dev Kit Authors"}
+]
+keywords = [
+    "ai",
+    "coding-agents",
+    "agents-md",
+    "claude-code",
+    "cursor",
+    "antigravity",
+    "opencode",
+    "developer-tools"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Quality Assurance",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+udk = "udk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["udk*"]
+
+[tool.setuptools.package-data]
+udk = ["canonical/**/*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.pyright]
+extraPaths = [
+    "udk/templates/ai_ml_starter",
+    "udk/templates/python_cli",
+]

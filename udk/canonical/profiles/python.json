@@ -1,0 +1,26 @@
+{
+  "id": "python",
+  "name": "Python & General Scripting",
+  "description": "Configured for idiomatic Python 3.10+ development with pytest, ruff/black formatting, and explicit type hints.",
+  "file_globs": "*.py",
+  "commands": {
+    "test": "pytest",
+    "lint": "ruff check .",
+    "format": "ruff format .",
+    "typecheck": "mypy .",
+    "install": "pip install -e '.[dev]'"
+  },
+  "conventions": [
+    "Adhere to PEP 8 style with standard 4-space indentation.",
+    "Add type annotations to all public functions, classes, and return signatures.",
+    "Use pytest for all automated tests; isolate disk operations with tmp_path.",
+    "Avoid bare except clauses; catch specific exceptions with diagnostic logging."
+  ],
+  "recommended_skills": [
+    "debugging",
+    "test_planning",
+    "incremental_impl",
+    "code_review",
+    "security_review"
+  ]
+}

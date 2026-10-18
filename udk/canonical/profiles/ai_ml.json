@@ -1,0 +1,25 @@
+{
+  "id": "ai-ml",
+  "name": "AI & Machine Learning",
+  "description": "Configured for AI/ML engineering, model pipelines, evaluation benchmarks, and data preparation without forcing massive model downloads.",
+  "file_globs": "*.{py,ipynb,json}",
+  "commands": {
+    "test": "pytest tests/ -m 'not slow'",
+    "lint": "ruff check .",
+    "evaluate": "python -m eval",
+    "data_check": "python -m data_check"
+  },
+  "conventions": [
+    "Never hardcode random seeds in production; log random seeds for evaluation reproducibility.",
+    "Validate dataset shapes, null counts, and data distributions before training pipelines.",
+    "Do not commit binary model weights or large datasets into git repositories.",
+    "Log evaluation metrics honestly with confidence intervals and sample counts."
+  ],
+  "recommended_skills": [
+    "research",
+    "test_planning",
+    "debugging",
+    "architecture_review",
+    "doc_maintenance"
+  ]
+}

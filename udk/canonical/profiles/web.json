@@ -1,0 +1,26 @@
+{
+  "id": "web",
+  "name": "Web Applications",
+  "description": "Configured for modern web application development with responsive layouts, TypeScript/JavaScript standards, and automated testing.",
+  "file_globs": "*.{js,ts,jsx,tsx,html,css}",
+  "commands": {
+    "test": "npm test",
+    "lint": "npm run lint",
+    "build": "npm run build",
+    "dev": "npm run dev",
+    "install": "npm install"
+  },
+  "conventions": [
+    "Write semantic HTML5 elements with accessibility (ARIA) attributes.",
+    "Use TypeScript interfaces for component props and state contracts.",
+    "Isolate presentation styles from core state management.",
+    "Run automated unit/component tests before concluding features."
+  ],
+  "recommended_skills": [
+    "incremental_impl",
+    "debugging",
+    "code_review",
+    "security_review",
+    "test_planning"
+  ]
+}
